@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NamDang - Profile</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<!-- container  -->
+		<div class="h-screen w-screen flex flex-col">
+			<!-- banner  -->
+			<div
+				class="h-[200px] bg-gray-200 rounded-b-2xl overflow-hidden bg-cover bg-center"
+				style="
+					background-image: url(https://i.pinimg.com/736x/15/da/19/15da192d26dc7ed7b5b676a1229a1be9.jpg);
+				"
+			></div>
+
+			<!-- avatar and name  -->
+			<div class="flex items-end">
+				<div
+					class="size-[120px] rounded-full -mt-[60px] relative bg-white p-1 ml-6"
+				>
+					<img
+						src="https://i.pinimg.com/564x/c2/fc/fd/c2fcfd40fc59754fceb4f25b0b5244a0.jpg"
+						alt="avatar"
+						class="w-full h-full object-cover object-center rounded-full"
+					/>
+					<!-- vietnam flag  -->
+					<span
+						class="absolute bottom-0.5 right-1 z-10 border-2 border-white rounded-full"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="26"
+							height="26"
+							viewBox="0 0 64 64"
+						>
+							<circle cx="32" cy="32" r="30" fill="#f42f4c" />
+							<path
+								fill="#ffe62e"
+								d="m32 39l9.9 7l-3.7-11.4l9.8-7.4H35.8L32 16l-3.7 11.2H16l9.8 7.4L22.1 46z"
+							/>
+						</svg>
+					</span>
+				</div>
+
+				<!-- name  -->
+				<div>
+					<div class="text-xs flex justify-evenly">
+						<span>ダン</span><span class="ml-2">ズアン</span
+						><span class="-mr-2">ナム</span>
+					</div>
+					<h1
+						class="text-2xl font-medium text-center text-gray-900 ml-2"
+					>
+						DANG XUAN NAM
+					</h1>
+				</div>
+			</div>
+
+			<!-- infomation  -->
+			<div class="flex-1 bg-cyan-50 px-5 mt-6 flex flex-col">
+				<h2 class="text-xl">友達になりましょう</h2>
+				<div class="flex-1 flex-col"></div>
+				<div class="bg-yellow-200">
+					<button class="px-2 py-4 bg-purple-500 text-white">
+						共有
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
