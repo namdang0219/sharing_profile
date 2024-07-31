@@ -20,7 +20,7 @@
 			<!-- avatar and name  -->
 			<div class="flex items-end">
 				<div
-					class="size-[120px] rounded-full -mt-[60px] relative bg-white p-1 ml-6"
+					class="size-[146px] rounded-full -mt-[60px] relative bg-white p-1 ml-4"
 				>
 					<img
 						src="https://i.pinimg.com/564x/c2/fc/fd/c2fcfd40fc59754fceb4f25b0b5244a0.jpg"
@@ -47,28 +47,39 @@
 				</div>
 
 				<!-- name  -->
-				<div>
-					<div class="text-xs flex justify-evenly">
-						<span>ダン</span><span class="ml-2">ズアン</span
-						><span class="-mr-2">ナム</span>
-					</div>
-					<h1
-						class="text-2xl font-medium text-center text-gray-900 ml-2"
+				<div class="-ml-1">
+					<div>
+            <div class="text-xs flex justify-evenly">
+              <span>ダン</span><span class="ml-2">ズアン</span
+              ><span class="-mr-2">ナム</span>
+            </div>
+            <h1
+              class="text-2xl font-medium text-center text-gray-900 ml-2.5"
+            >
+              DANG XUAN NAM
+            </h1>
+          </div>
+					<div
+						class="bg-gray-100 text-gray-800 text-xs ml-2 w-fit py-1 px-3 rounded-md"
 					>
-						DANG XUAN NAM
-					</h1>
+						namdang.contact@gmail.com
+					</div>
 				</div>
 			</div>
 
 			<!-- infomation  -->
 			<div class="flex-1 p-4 flex flex-col">
+				<p>ウェブサイトをご覧いただきありがとうございます!</p>
 				<h2 class="text-xl mb-4">Contact me:</h2>
 				<div class="flex-1 flex-col gap-4 flex">
 					<!-- contact item  -->
 					<div
 						class="bg-white shadow-md border border-gray-100 rounded-lg"
 					>
-						<a href="https://www.instagram.com/namdang_0219/" class="flex items-center h-14 relative">
+						<a
+							href="https://www.instagram.com/namdang_0219/"
+							class="flex items-center h-14 relative"
+						>
 							<span
 								class="absolute left-4 top-1/2 -translate-y-1/2"
 							>
@@ -150,7 +161,10 @@
 					<div
 						class="bg-white shadow-md border border-gray-100 rounded-lg"
 					>
-						<a href="https://github.com/namdang0219" class="flex items-center h-14 relative">
+						<a
+							href="https://github.com/namdang0219"
+							class="flex items-center h-14 relative"
+						>
 							<span
 								class="absolute left-4 top-1/2 -translate-y-1/2"
 							>
@@ -175,7 +189,10 @@
 					<div
 						class="bg-white shadow-md border border-gray-100 rounded-lg"
 					>
-						<a href="https://namdang0219-portfolio.vercel.app/" class="flex items-center h-14 relative">
+						<a
+							href="https://namdang0219-portfolio.vercel.app/"
+							class="flex items-center h-14 relative"
+						>
 							<span
 								class="absolute left-4 top-1/2 -translate-y-1/2"
 							>
@@ -201,7 +218,7 @@
 						友達に共有
 					</div>
 					<button
-						class="bg-purple-500 h-14 rounded-lg hover:bg-violet-600 transition-all text-xl font-medium text-white block w-full"
+						class="bg-violet-500 h-14 rounded-lg hover:bg-violet-600 transition-all text-xl font-medium text-white block w-full"
 						id="shareBtn"
 					>
 						共有
@@ -216,7 +233,7 @@
 					if (navigator.share) {
 						try {
 							await navigator.share({
-								title: "Nam Dang - Sharing Profile",
+								title: "Dang Xuan Nam - Sharing Profile",
 								text: "ご拝見ありがとうございました。",
 								url: window.location.href,
 							});
